@@ -1,0 +1,8 @@
+.card {
+  background: var(--velvet-surface);
+  color: var(--velvet-text);
+  border: 1px solid var(--velvet-border);
+  border-radius: var(--velvet-radius-lg);
+  padding: var(--velvet-space-5);
+  font-family: var(--velvet-font);
+}

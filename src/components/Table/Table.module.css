@@ -1,0 +1,34 @@
+.scroll { overflow-x: auto; }
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--velvet-font);
+  font-size: var(--velvet-text-md);
+  color: var(--velvet-text);
+}
+
+.table caption {
+  text-align: left;
+  color: var(--velvet-text-muted);
+  font-size: var(--velvet-text-sm);
+  padding-bottom: var(--velvet-space-2);
+}
+
+.table th {
+  text-align: left;
+  font-weight: var(--velvet-weight-medium);
+  color: var(--velvet-text-muted);
+  border-bottom: 1px solid var(--velvet-border-strong);
+  white-space: nowrap;
+}
+
+.table td { border-bottom: 1px solid var(--velvet-border); }
+
+.table tbody tr:hover { background: var(--velvet-surface-hover); }
+
+/* Numeric columns line up when the cell opts in with align="right". */
+.table td[align="right"], .table th[align="right"] { font-variant-numeric: tabular-nums; }
+
+.comfortable :is(th, td) { padding: var(--velvet-space-3) var(--velvet-space-4); }
+.compact :is(th, td) { padding: var(--velvet-space-1) var(--velvet-space-3); font-size: var(--velvet-text-sm); }

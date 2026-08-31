@@ -1,0 +1,7 @@
+/* Same box as Input, only taller and resizable. */
+.textarea {
+  composes: input from "../Input/Input.module.css";
+  resize: vertical;
+  min-height: 4rem;
+  font-family: inherit;
+}
