@@ -17,9 +17,9 @@
   --velvet-gray-900: #16191e;
   --velvet-gray-950: #0d0f13;
 
-  --velvet-violet-300: #b6a3ff;
-  --velvet-violet-500: #7c5cff;
-  --velvet-violet-600: #6845e6;
+  --velvet-blue-300: #93b4fe;
+  --velvet-blue-500: #2563eb;
+  --velvet-blue-600: #1d4ed8;
 
   --velvet-red-400: #f2707a;
   --velvet-red-500: #dc3545;
@@ -62,12 +62,12 @@
   --velvet-text-on-accent: var(--velvet-gray-0);
   --velvet-border: var(--velvet-gray-200);
   --velvet-border-strong: var(--velvet-gray-300);
-  --velvet-accent: var(--velvet-violet-500);
-  --velvet-accent-hover: var(--velvet-violet-600);
+  --velvet-accent: var(--velvet-blue-500);
+  --velvet-accent-hover: var(--velvet-blue-600);
   --velvet-danger: var(--velvet-red-500);
   --velvet-success: var(--velvet-green-500);
   --velvet-warning: var(--velvet-amber-500);
-  --velvet-focus-ring: var(--velvet-violet-500);
+  --velvet-focus-ring: var(--velvet-blue-500);
   --velvet-shadow-md: 0 2px 8px rgb(0 0 0 / 0.1);
   --velvet-shadow-lg: 0 12px 32px rgb(0 0 0 / 0.16);
 }
@@ -82,12 +82,12 @@
   --velvet-text-on-accent: var(--velvet-gray-0);
   --velvet-border: var(--velvet-gray-800);
   --velvet-border-strong: var(--velvet-gray-700);
-  --velvet-accent: var(--velvet-violet-500);
-  --velvet-accent-hover: var(--velvet-violet-300);
+  --velvet-accent: var(--velvet-blue-500);
+  --velvet-accent-hover: var(--velvet-blue-300);
   --velvet-danger: var(--velvet-red-400);
   --velvet-success: var(--velvet-green-400);
   --velvet-warning: var(--velvet-amber-400);
-  --velvet-focus-ring: var(--velvet-violet-300);
+  --velvet-focus-ring: var(--velvet-blue-300);
   --velvet-shadow-md: 0 2px 8px rgb(0 0 0 / 0.5);
   --velvet-shadow-lg: 0 12px 32px rgb(0 0 0 / 0.6);
 }
@@ -102,12 +102,12 @@
     --velvet-text-on-accent: var(--velvet-gray-0);
     --velvet-border: var(--velvet-gray-800);
     --velvet-border-strong: var(--velvet-gray-700);
-    --velvet-accent: var(--velvet-violet-500);
-    --velvet-accent-hover: var(--velvet-violet-300);
+    --velvet-accent: var(--velvet-blue-500);
+    --velvet-accent-hover: var(--velvet-blue-300);
     --velvet-danger: var(--velvet-red-400);
     --velvet-success: var(--velvet-green-400);
     --velvet-warning: var(--velvet-amber-400);
-    --velvet-focus-ring: var(--velvet-violet-300);
+    --velvet-focus-ring: var(--velvet-blue-300);
     --velvet-shadow-md: 0 2px 8px rgb(0 0 0 / 0.5);
     --velvet-shadow-lg: 0 12px 32px rgb(0 0 0 / 0.6);
   }
