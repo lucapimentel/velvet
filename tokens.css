@@ -1,0 +1,114 @@
+/* Velvet tokens.
+   Base tokens name raw values. Components never read them.
+   Semantic tokens name roles. Components read only these.
+   Dark mode redefines the semantic layer and nothing else. */
+
+:root {
+  /* ---- base: colour ---- */
+  --velvet-gray-0: #ffffff;
+  --velvet-gray-50: #f7f8f9;
+  --velvet-gray-100: #eceef1;
+  --velvet-gray-200: #dfe2e7;
+  --velvet-gray-300: #c3c8d0;
+  --velvet-gray-500: #7c848f;
+  --velvet-gray-600: #5d646e;
+  --velvet-gray-700: #3f454e;
+  --velvet-gray-800: #272c33;
+  --velvet-gray-900: #16191e;
+  --velvet-gray-950: #0d0f13;
+
+  --velvet-violet-300: #b6a3ff;
+  --velvet-violet-500: #7c5cff;
+  --velvet-violet-600: #6845e6;
+
+  --velvet-red-400: #f2707a;
+  --velvet-red-500: #dc3545;
+  --velvet-green-400: #4ec98a;
+  --velvet-green-500: #1f9d5c;
+  --velvet-amber-400: #f0b429;
+  --velvet-amber-500: #c98a10;
+
+  /* ---- flat scales. Identical in every theme. ---- */
+  --velvet-space-1: 0.25rem;
+  --velvet-space-2: 0.5rem;
+  --velvet-space-3: 0.75rem;
+  --velvet-space-4: 1rem;
+  --velvet-space-5: 1.5rem;
+  --velvet-space-6: 2rem;
+
+  --velvet-radius-sm: 4px;
+  --velvet-radius-md: 8px;
+  --velvet-radius-lg: 12px;
+  --velvet-radius-full: 9999px;
+
+  --velvet-text-sm: 0.8125rem;
+  --velvet-text-md: 0.9375rem;
+  --velvet-text-lg: 1.125rem;
+  --velvet-weight-normal: 400;
+  --velvet-weight-medium: 500;
+
+  --velvet-font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --velvet-font-mono: ui-monospace, SFMono-Regular, "Cascadia Code", monospace;
+
+  --velvet-duration: 150ms;
+  --velvet-ease: cubic-bezier(0.2, 0, 0.2, 1);
+
+  /* ---- semantic: light ---- */
+  --velvet-surface: var(--velvet-gray-0);
+  --velvet-surface-sunken: var(--velvet-gray-50);
+  --velvet-surface-hover: var(--velvet-gray-100);
+  --velvet-text: var(--velvet-gray-900);
+  --velvet-text-muted: var(--velvet-gray-600);
+  --velvet-text-on-accent: var(--velvet-gray-0);
+  --velvet-border: var(--velvet-gray-200);
+  --velvet-border-strong: var(--velvet-gray-300);
+  --velvet-accent: var(--velvet-violet-500);
+  --velvet-accent-hover: var(--velvet-violet-600);
+  --velvet-danger: var(--velvet-red-500);
+  --velvet-success: var(--velvet-green-500);
+  --velvet-warning: var(--velvet-amber-500);
+  --velvet-focus-ring: var(--velvet-violet-500);
+  --velvet-shadow-md: 0 2px 8px rgb(0 0 0 / 0.1);
+  --velvet-shadow-lg: 0 12px 32px rgb(0 0 0 / 0.16);
+}
+
+/* ---- semantic: dark ---- */
+:root[data-theme="dark"] {
+  --velvet-surface: var(--velvet-gray-900);
+  --velvet-surface-sunken: var(--velvet-gray-950);
+  --velvet-surface-hover: var(--velvet-gray-800);
+  --velvet-text: var(--velvet-gray-50);
+  --velvet-text-muted: var(--velvet-gray-300);
+  --velvet-text-on-accent: var(--velvet-gray-0);
+  --velvet-border: var(--velvet-gray-800);
+  --velvet-border-strong: var(--velvet-gray-700);
+  --velvet-accent: var(--velvet-violet-500);
+  --velvet-accent-hover: var(--velvet-violet-300);
+  --velvet-danger: var(--velvet-red-400);
+  --velvet-success: var(--velvet-green-400);
+  --velvet-warning: var(--velvet-amber-400);
+  --velvet-focus-ring: var(--velvet-violet-300);
+  --velvet-shadow-md: 0 2px 8px rgb(0 0 0 / 0.5);
+  --velvet-shadow-lg: 0 12px 32px rgb(0 0 0 / 0.6);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --velvet-surface: var(--velvet-gray-900);
+    --velvet-surface-sunken: var(--velvet-gray-950);
+    --velvet-surface-hover: var(--velvet-gray-800);
+    --velvet-text: var(--velvet-gray-50);
+    --velvet-text-muted: var(--velvet-gray-300);
+    --velvet-text-on-accent: var(--velvet-gray-0);
+    --velvet-border: var(--velvet-gray-800);
+    --velvet-border-strong: var(--velvet-gray-700);
+    --velvet-accent: var(--velvet-violet-500);
+    --velvet-accent-hover: var(--velvet-violet-300);
+    --velvet-danger: var(--velvet-red-400);
+    --velvet-success: var(--velvet-green-400);
+    --velvet-warning: var(--velvet-amber-400);
+    --velvet-focus-ring: var(--velvet-violet-300);
+    --velvet-shadow-md: 0 2px 8px rgb(0 0 0 / 0.5);
+    --velvet-shadow-lg: 0 12px 32px rgb(0 0 0 / 0.6);
+  }
+}

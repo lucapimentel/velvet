@@ -1,0 +1,20 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--velvet-space-1);
+  font-family: var(--velvet-font);
+}
+
+.label {
+  font-size: var(--velvet-text-sm);
+  font-weight: var(--velvet-weight-medium);
+  color: var(--velvet-text);
+}
+
+.hint, .error {
+  margin: 0;
+  font-size: var(--velvet-text-sm);
+}
+
+.hint { color: var(--velvet-text-muted); }
+.error { color: var(--velvet-danger); }
