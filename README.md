@@ -2,7 +2,7 @@
 
 A React component library. It owns appearance and accessibility, and nothing else.
 
-**6.8 kB gzipped**, zero runtime styling, no Tailwind required. Every interactive
+**7.6 kB gzipped**, zero runtime styling, no Tailwind required. Every interactive
 component sits on a Radix primitive, and axe checks every story in Storybook.
 
 ```bash
@@ -42,6 +42,9 @@ Dark mode follows `prefers-color-scheme` by default. Set `data-theme="dark"` or
 - **Form state, data fetching, routing.** `Field` takes an `error` string and has
   never heard of react-hook-form.
 - **App-specific widgets.** A component with one consumer belongs in that app.
+- **The page shell.** Velvet ships `NavLink`, `PageHeader` and `EmptyState`. It does
+  not ship an `AppBar` or a `SideNav` — every app arranges its own bar out of the
+  parts, because the arrangement is the thing that differs.
 
 ## Development
 

@@ -28,3 +28,12 @@ export const Sizes: Story = {
 };
 
 export const Disabled: Story = { args: { children: "Unavailable", disabled: true } };
+
+/** `asChild` renders the child instead of a button, keeping the styling. */
+export const AsLink: Story = {
+  render: () => (
+    <Button asChild>
+      <a href="#new-plan">New plan</a>
+    </Button>
+  ),
+};

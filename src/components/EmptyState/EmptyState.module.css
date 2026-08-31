@@ -1,0 +1,23 @@
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--velvet-space-2);
+  padding: var(--velvet-space-6) var(--velvet-space-5);
+  font-family: var(--velvet-font);
+  color: var(--velvet-text);
+}
+
+.icon { color: var(--velvet-text-muted); line-height: 0; }
+
+.title { margin: 0; font-size: var(--velvet-text-lg); font-weight: var(--velvet-weight-medium); }
+
+.description {
+  margin: 0;
+  max-width: 42ch;
+  color: var(--velvet-text-muted);
+  font-size: var(--velvet-text-md);
+}
+
+.action { margin-top: var(--velvet-space-2); }
