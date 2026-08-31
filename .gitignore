@@ -1,0 +1,25 @@
+# Decision records and planning notes stay local
+docs/adr/
+CONTEXT.md
+
+# AI tooling
+CLAUDE.md
+AGENTS.md
+.claude/
+.cursor/
+.cursorrules
+.windsurfrules
+.aider*
+.github/copilot-instructions.md
+
+# Node
+node_modules/
+dist/
+storybook-static/
+*.tsbuildinfo
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
