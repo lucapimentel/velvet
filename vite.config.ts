@@ -7,7 +7,7 @@ export default defineConfig({
   css: { modules: { generateScopedName: "velvet_[local]_[hash:base64:4]" } },
   build: {
     lib: { entry: "src/index.ts", formats: ["es"], fileName: "velvet", cssFileName: "velvet" },
-    rollupOptions: { external: ["react", "react-dom", "react/jsx-runtime"] },
+    rollupOptions: { external: [/^react/, /^@radix-ui\//] },
   },
   test: { environment: "jsdom", globals: true },
 });

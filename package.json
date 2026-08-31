@@ -32,7 +32,11 @@
     "react": ">=19",
     "react-dom": ">=19"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.23",
+    "@radix-ui/react-select": "^2.3.7",
+    "@radix-ui/react-toast": "^1.2.23"
+  },
   "devDependencies": {
     "@storybook/addon-a11y": "^9.0.0",
     "@storybook/react-vite": "^9.0.0",
