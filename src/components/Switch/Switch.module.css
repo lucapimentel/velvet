@@ -1,0 +1,52 @@
+.root {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--velvet-space-2);
+  font-family: var(--velvet-font);
+  font-size: var(--velvet-text-md);
+  color: var(--velvet-text);
+  cursor: pointer;
+}
+
+.root:has(.input:disabled) { opacity: 0.55; cursor: not-allowed; }
+
+/* Kept in the accessibility tree and focusable, just not painted. */
+.input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.track {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  width: 2.25em;
+  height: 1.25em;
+  padding: 2px;
+  background: var(--velvet-border-strong);
+  border-radius: var(--velvet-radius-full);
+  transition: background-color var(--velvet-duration) var(--velvet-ease);
+}
+
+.thumb {
+  width: 1em;
+  height: 1em;
+  background: var(--velvet-surface);
+  border-radius: var(--velvet-radius-full);
+  box-shadow: var(--velvet-shadow-md);
+  transition: transform var(--velvet-duration) var(--velvet-ease);
+}
+
+.input:checked + .track { background: var(--velvet-accent); }
+.input:checked + .track .thumb { transform: translateX(1em); }
+.input:focus-visible + .track { outline: 2px solid var(--velvet-focus-ring); outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .track, .thumb { transition: none; }
+}

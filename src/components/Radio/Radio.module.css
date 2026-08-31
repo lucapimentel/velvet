@@ -1,0 +1,12 @@
+.root {
+  composes: root from "../Checkbox/Checkbox.module.css";
+}
+
+.input {
+  composes: input from "../Checkbox/Checkbox.module.css";
+  border-radius: var(--velvet-radius-full);
+}
+
+.input:checked {
+  background-image: radial-gradient(circle, #fff 0 32%, transparent 34%);
+}

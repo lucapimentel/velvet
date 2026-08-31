@@ -2,7 +2,7 @@
 
 A React component library. It owns appearance and accessibility, and nothing else.
 
-**5.9 kB gzipped**, zero runtime styling, no Tailwind required. Every interactive
+**6.8 kB gzipped**, zero runtime styling, no Tailwind required. Every interactive
 component sits on a Radix primitive, and axe checks every story in Storybook.
 
 ```bash
