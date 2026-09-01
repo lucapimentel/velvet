@@ -6,9 +6,11 @@ export interface CheckboxProps extends Omit<InputHTMLAttributes<HTMLInputElement
   label: string;
   /** Neither checked nor unchecked. A DOM property, so it cannot be set as an attribute. */
   indeterminate?: boolean;
+  /** Keeps the label for screen readers but takes it off the screen. For grid cells. */
+  hideLabel?: boolean;
 }
 
-export function Checkbox({ label, indeterminate = false, className, ...rest }: CheckboxProps) {
+export function Checkbox({ label, indeterminate = false, hideLabel = false, className, ...rest }: CheckboxProps) {
   const ref = useRef<HTMLInputElement>(null);
   useEffect(() => {
     if (ref.current) ref.current.indeterminate = indeterminate;
@@ -17,7 +19,7 @@ export function Checkbox({ label, indeterminate = false, className, ...rest }: C
   return (
     <label className={cn(styles.root, className)}>
       <input ref={ref} type="checkbox" className={styles.input} {...rest} />
-      <span className={styles.label}>{label}</span>
+      <span className={cn(styles.label, hideLabel && styles.visuallyHidden)}>{label}</span>
     </label>
   );
 }

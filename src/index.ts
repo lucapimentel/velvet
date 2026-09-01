@@ -10,6 +10,8 @@ export { Card } from "./components/Card/Card";
 export type { CardProps } from "./components/Card/Card";
 export { Checkbox } from "./components/Checkbox/Checkbox";
 export type { CheckboxProps } from "./components/Checkbox/Checkbox";
+export { DataGrid } from "./components/DataGrid/DataGrid";
+export type { DataGridProps, Column } from "./components/DataGrid/DataGrid";
 export { Dialog, DialogClose } from "./components/Dialog/Dialog";
 export type { DialogProps } from "./components/Dialog/Dialog";
 export { EmptyState } from "./components/EmptyState/EmptyState";
