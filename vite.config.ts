@@ -16,7 +16,10 @@ export default defineConfig({
   css: { modules: { generateScopedName: "velvet_[local]_[hash:base64:4]" } },
   build: {
     lib: { entry: "src/index.ts", formats: ["es"], fileName: "velvet", cssFileName: "velvet" },
-    rollupOptions: { external },
+    // Velvet is a client component library: half of it uses hooks, and it
+    // ships as one bundle. Without the directive, a React Server Component
+    // importing even Card fails on the hooks its neighbours pulled in.
+    rollupOptions: { external, output: { banner: '"use client";' } },
   },
   test: { environment: "jsdom", globals: true },
 });

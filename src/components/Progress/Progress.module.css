@@ -1,0 +1,19 @@
+.root {
+  position: relative;
+  overflow: hidden;
+  height: 6px;
+  border-radius: var(--velvet-radius-full);
+  background: var(--velvet-surface-sunken);
+}
+.bar {
+  width: 100%;
+  height: 100%;
+  transition: transform var(--velvet-duration) var(--velvet-ease);
+}
+.accent  { background: var(--velvet-accent); }
+.warning { background: var(--velvet-warning); }
+.danger  { background: var(--velvet-danger); }
+
+@media (prefers-reduced-motion: reduce) {
+  .bar { transition: none; }
+}

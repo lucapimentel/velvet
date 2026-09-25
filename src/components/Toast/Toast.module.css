@@ -42,7 +42,7 @@
   font: inherit;
   font-size: var(--velvet-text-sm);
   font-weight: var(--velvet-weight-medium);
-  color: var(--velvet-accent);
+  color: var(--velvet-accent-text);
   background: none;
   border: none;
   padding: var(--velvet-space-1) var(--velvet-space-2);

@@ -33,6 +33,23 @@ reading its source:
 Dark mode follows `prefers-color-scheme` by default. Set `data-theme="dark"` or
 `data-theme="light"` on `<html>` to override it.
 
+The accent is two tokens, not one. `--velvet-accent` fills a shape and only has
+to reach 3:1 against the page; `--velvet-accent-text` is the same colour used as
+a label and has to reach 4.5:1, which usually means a lighter value in dark mode.
+Override both, or an active `NavLink` turns unreadable on dark.
+
+Overriding a token from your app? Declare it on `body`, not `:root`: the dark
+theme here lives on `:root[data-theme="dark"]` and outranks a bare `:root` rule
+in your stylesheet.
+
+## The one exception to the Radix rule
+
+Every interactive component sits on a Radix primitive, except `Autocomplete`.
+Radix has no combobox, and wrapping `Popover` around a text input makes the two
+fight over focus. So `Autocomplete` implements the ARIA combobox pattern by hand:
+`role="combobox"` on the input, a `listbox` of `option`s, and
+`aria-activedescendant` for keyboard navigation. Deliberate, not an oversight.
+
 ## What Velvet does not do
 
 - **Charts.** Pull in a charting library directly.

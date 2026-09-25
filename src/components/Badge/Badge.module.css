@@ -12,7 +12,7 @@
 }
 
 .neutral { color: var(--velvet-text-muted); border-color: var(--velvet-border-strong); background: var(--velvet-surface-sunken); }
-.accent  { color: var(--velvet-accent);     border-color: var(--velvet-accent);        background: transparent; }
+.accent  { color: var(--velvet-accent-text); border-color: var(--velvet-accent);       background: transparent; }
 .success { color: var(--velvet-success);    border-color: var(--velvet-success);       background: transparent; }
 .warning { color: var(--velvet-warning);    border-color: var(--velvet-warning);       background: transparent; }
 .danger  { color: var(--velvet-danger);     border-color: var(--velvet-danger);        background: transparent; }

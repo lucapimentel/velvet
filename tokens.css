@@ -64,6 +64,9 @@
   --velvet-border-strong: var(--velvet-gray-300);
   --velvet-accent: var(--velvet-blue-500);
   --velvet-accent-hover: var(--velvet-blue-600);
+  /* The accent as a label, not as a filled surface. Text needs contrast a
+     filled shape does not: blue-500 on the dark hover surface is 2.7:1. */
+  --velvet-accent-text: var(--velvet-blue-600);
   --velvet-danger: var(--velvet-red-500);
   --velvet-success: var(--velvet-green-500);
   --velvet-warning: var(--velvet-amber-500);
@@ -84,6 +87,7 @@
   --velvet-border-strong: var(--velvet-gray-700);
   --velvet-accent: var(--velvet-blue-500);
   --velvet-accent-hover: var(--velvet-blue-300);
+  --velvet-accent-text: var(--velvet-blue-300);
   --velvet-danger: var(--velvet-red-400);
   --velvet-success: var(--velvet-green-400);
   --velvet-warning: var(--velvet-amber-400);
@@ -104,6 +108,7 @@
     --velvet-border-strong: var(--velvet-gray-700);
     --velvet-accent: var(--velvet-blue-500);
     --velvet-accent-hover: var(--velvet-blue-300);
+    --velvet-accent-text: var(--velvet-blue-300);
     --velvet-danger: var(--velvet-red-400);
     --velvet-success: var(--velvet-green-400);
     --velvet-warning: var(--velvet-amber-400);

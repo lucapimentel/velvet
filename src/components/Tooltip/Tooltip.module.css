@@ -1,0 +1,11 @@
+.content {
+  font-family: var(--velvet-font);
+  font-size: var(--velvet-text-sm);
+  color: var(--velvet-text);
+  background: var(--velvet-surface);
+  border: 1px solid var(--velvet-border-strong);
+  border-radius: var(--velvet-radius-sm);
+  padding: var(--velvet-space-1) var(--velvet-space-2);
+  box-shadow: var(--velvet-shadow-md);
+}
+.arrow { fill: var(--velvet-surface); }

@@ -23,7 +23,7 @@
 
 .arrow { opacity: 0; transition: opacity var(--velvet-duration) var(--velvet-ease); }
 .sort:hover .arrow { opacity: 0.4; }
-.arrowActive { opacity: 1; color: var(--velvet-accent); }
+.arrowActive { opacity: 1; color: var(--velvet-accent-text); }
 
 .grid tr[data-selected] { background: var(--velvet-surface-hover); }
 

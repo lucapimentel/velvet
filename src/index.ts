@@ -2,6 +2,8 @@ import "../tokens.css";
 
 export { cn } from "./cn";
 
+export { Autocomplete } from "./components/Autocomplete/Autocomplete";
+export type { AutocompleteProps, AutocompleteOption } from "./components/Autocomplete/Autocomplete";
 export { Badge } from "./components/Badge/Badge";
 export type { BadgeProps, BadgeTone } from "./components/Badge/Badge";
 export { Button } from "./components/Button/Button";
@@ -26,6 +28,8 @@ export { Radio } from "./components/Radio/Radio";
 export type { RadioProps } from "./components/Radio/Radio";
 export { PageHeader } from "./components/PageHeader/PageHeader";
 export type { PageHeaderProps } from "./components/PageHeader/PageHeader";
+export { Progress } from "./components/Progress/Progress";
+export type { ProgressProps } from "./components/Progress/Progress";
 export { Select } from "./components/Select/Select";
 export type { SelectProps, SelectItem } from "./components/Select/Select";
 export { Slider } from "./components/Slider/Slider";
@@ -42,3 +46,9 @@ export { Table } from "./components/Table/Table";
 export type { TableProps } from "./components/Table/Table";
 export { Textarea } from "./components/Textarea/Textarea";
 export type { TextareaProps } from "./components/Textarea/Textarea";
+export { ToggleGroup } from "./components/ToggleGroup/ToggleGroup";
+export type { ToggleGroupProps, ToggleGroupItem } from "./components/ToggleGroup/ToggleGroup";
+export { Tooltip, TooltipProvider } from "./components/Tooltip/Tooltip";
+export type { TooltipProps } from "./components/Tooltip/Tooltip";
+export { VisuallyHidden } from "./components/VisuallyHidden/VisuallyHidden";
+export type { VisuallyHiddenProps } from "./components/VisuallyHidden/VisuallyHidden";
