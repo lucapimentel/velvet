@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "description": "React component library. Owns appearance and accessibility, nothing else.",
   "license": "MIT",
-  "repository": "github:lucapimentel/velvet",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucapimentel/velvet.git"
+  },
   "type": "module",
   "sideEffects": [
     "*.css"
