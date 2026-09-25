@@ -1,9 +1,8 @@
 # Velvet
 
-A React component library. It owns appearance and accessibility, and nothing else.
+A React component library. It owns appearance and accessibility.
 
-**9.4 kB gzipped**, zero runtime styling, no Tailwind required. Every interactive
-component sits on a Radix primitive, and axe checks every story in Storybook.
+**9.4 kB gzipped**
 
 ```bash
 npm i @lucapimentel/velvet
